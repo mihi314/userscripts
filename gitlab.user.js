@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitLab improvements
 // @namespace    http://tampermonkey.net/
-// @version      2025-10-22
+// @version      2026-10-13
 // @description  
 // @author       Michael Engelhard
 // @match        https://gitlab.com/*
@@ -12,10 +12,15 @@
 (function() {
   'use strict';
 
-  // Makes label select and other dropdowns larger
   GM_addStyle(`
+    /* Makes label select and other dropdowns larger */
     .gl-new-dropdown-container .gl-new-dropdown-inner {
       max-height: 65vh !important;
+    }
+    @container (width >= 768px) {
+      .gl-detail-layout-container-has-sidebar > .gl-detail-layout-sidebar {
+        height: 100% !important;
+      }
     }
   `)
 })();
