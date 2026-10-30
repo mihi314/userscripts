@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         GitLab improvements
 // @namespace    http://tampermonkey.net/
-// @version      2026-10-13
+// @version      2026-10-30
 // @description  
 // @author       Michael Engelhard
 // @match        https://gitlab.com/*
+// @match        https://gitlab.vhse.cloud/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=gitlab.com
 // @grant        GM_addStyle
 // ==/UserScript==
